@@ -1,13 +1,20 @@
-// import React from "react";
+import React from "react";
 import "./App.css";
 import Dinner from "./Dinner";
 
 function App() {
   return (
-    <div class="app--container">
+    <div className="app--container">
       <h1>What is going to be served in today's dinner?</h1>
       <hr />
-      <Dinner dishName="Chicken Biryani" dessert="Pineapple Trifle" />
+      <Dinner
+        menu={{
+          dishName: "Chicken Biryani",
+          dishPrice: 450,
+          dessertName: "Pineapple Pie",
+          dessertPrice: 250,
+        }}
+      />
     </div>
   );
 }

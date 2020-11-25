@@ -1,15 +1,17 @@
-// import React from "react";
+import React from "react";
 
-function Dinner(props) {
+function Dinner({ menu }) {
   return (
     <div>
       <p>
-        <strong>{props.dishName}</strong> will be served as the main meal in the
-        dinner today
+        <strong>{menu.dishName}</strong> will be served as the main meal in the
+        dinner today. The price of this dish is{" "}
+        <strong>{menu.dishPrice}</strong>
       </p>
       <p>
-        <strong>{props.dessert}</strong> will be served as the dessert in the
-        dinner today
+        <strong>{menu.dessertName}</strong> will be served as the dessert in the
+        dinner today. The price of this dessert is{" "}
+        <strong>{menu.dessertPrice}</strong>
       </p>
     </div>
   );
